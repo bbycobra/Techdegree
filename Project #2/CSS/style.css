@@ -1,0 +1,328 @@
+/* ================================= 
+  Base Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+@import url(//fonts.googleapis.com/css?family=Roboto);
+
+@import url(//fonts.googleapis.com/css?family=Kalam);
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.6;
+}
+
+h1,
+h3 {
+    font-family: Kalam;
+    color: #61FFAB;
+    text-align: center;
+}
+
+p {
+    font-size: .95rem;
+    margin: 0;
+    color: white;
+    font-family: Roboto;
+}
+
+.headline{
+    padding: 20px;
+}
+
+.phone,
+.email{
+    font-weight: bolder;
+}
+
+/* ---- Base Layout Styles ----*/
+
+/* ---- Navigation ---- */
+
+.name {
+    font-size: 1.2rem;
+    font-family: Kalam;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.main-nav{
+    padding: 0 20px 0 20px;
+    background-color: #6745A3;
+}
+
+.navside{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navside a{
+    font-family: Kalam;
+    text-decoration: none;
+}
+
+.main-nav li {
+    text-align: center;
+    list-style: none;
+	margin-top: 6px;
+    margin-bottom: 6px;
+    text-decoration: none;
+    font-weight: bolder;
+    background-color: #61FFAB;
+    min-width: 70vw;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+
+}
+
+.main-nav ul{
+    align-content: center;
+    padding: 0px;
+}
+
+.main-nav a {
+    font-size: 1.2rem;
+    color: black;
+    text-transform: uppercase;
+}
+    
+.main-nav a:hover {
+	color: #A25AC7;
+}
+
+.main-header{
+    padding: 0 10px;
+}
+
+.profile-img{
+    width: 100%;
+    max-width: 400px;
+    border: 2px #61FFAB solid;
+}
+
+.portfolio{
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    background-color: #362F63;
+    margin: 0px;
+    padding-top: 20px;
+}
+
+.item img{
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    overflow: hidden;
+}
+
+.main-footer{
+    text-align: center;
+    padding: 10px;
+    background-color: #6745A3;
+    padding-bottom: 10px;
+}
+
+.main-footer a{
+    text-decoration: none;
+    color: white;
+}
+
+.email{
+    padding-bottom: 25px;
+}
+
+.bottom-nav{
+    display: flex;
+    padding: 20px 10px;
+    justify-content: space-between;
+    border-top: 1px #61FFAB solid;
+}
+
+.bottom-nav a{
+    text-decoration: none;
+}
+
+.bottom-nav a:hover {
+	color: #A25AC7;
+}
+
+.bottom-navside{
+    display:none;
+}
+
+.top{
+    font-size: 1.2rem;
+    font-family: Kalam;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+}
+
+.bottom-name{
+    font-size: 1.3rem;
+    font-family: Kalam;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+}
+
+.pictures{
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+}
+
+/* ---- Layout Containers ---- */
+
+.first-container {
+    background-color: #6745A3;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.second-container {
+    text-align: center;
+    padding: 5px;
+    padding-bottom: 20px;
+    background-color: #362F63;
+}
+
+.third-container{
+    text-align: center;
+    padding: 5px;
+    background-color: #362F63;
+    padding-bottom: 20px;
+}
+
+.third-container i{
+    font-size: 200px;
+    color: white;
+}
+
+section:not(.first-container), .main-footer{
+    border-top: 2px dotted #A25AC7;
+}
+
+/* ---- Media Queries ---- */
+
+@media (min-width: 610px) {
+    .navside{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .main-header{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .main-nav{
+        padding-bottom: 20px;
+    }
+
+    .main-nav ul{
+        justify-content: center;
+    }
+
+    .main-nav li{
+        min-width: 20vh;
+        margin: 0 5px;
+    }
+
+    .profile-img{
+        margin-right: 20px;
+    }
+
+    .portfolio{
+        text-align: center;
+    }
+
+    section{
+        font-size: 0;
+        word-spacing: 0;
+        letter-spacing: 0;
+    }
+    .item{
+        display: inline-block;
+        width: 50%;
+        padding: 15px;
+        
+        font-size: initial;
+        word-spacing: initial;
+        letter-spacing: initial;
+        vertical-align: top;
+    }
+
+    .bottom-navside{
+        display: inline-flex;
+        margin: 0;
+        padding: 0;
+    }
+    .bottom-navside li{
+        list-style: none;
+        padding: 0 10px;
+        font-family: Kalam;
+    }
+    .top{
+        display: none;
+    }
+}  
+
+@media (min-width: 1000px) {
+   
+    .main-header{
+        padding: 0px;
+    }
+
+    .item{
+        display: inline-block;
+        width: 33%;
+        padding: 10px;   
+    }
+
+    .name{
+        display: flex;
+        flex-direction: row;
+        font-size: 1.3rem;
+        padding-left: 20px;
+    }
+
+    .main-nav{ 
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 10px;
+        padding-top: 10px;
+
+    }
+
+    .main-nav ul{
+        justify-content: space-between;
+    }
+
+    .main-nav li{
+        min-width: 15vh;
+        padding: 5px;
+    }
+
+    .headline{
+        font-size: 1.2rem;
+    }
+
+    .profile-img{
+        width: 50%;
+        max-width: unset;
+    }
+} 
