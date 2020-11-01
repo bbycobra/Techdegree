@@ -2,13 +2,14 @@
   Base Styles
 ==================================== */
 
-* {
-	box-sizing: border-box;
-}
 
 @import url(//fonts.googleapis.com/css?family=Roboto);
 
 @import url(//fonts.googleapis.com/css?family=Kalam);
+
+* {
+	box-sizing: border-box;
+}
 
 
 html{
@@ -145,7 +146,7 @@ p {
 
 .bottom-nav{
     display: flex;
-    padding: 20px 10px;
+    padding-top: 10px;
     justify-content: space-between;
     border-top: 1px #61FFAB solid;
 }
@@ -171,7 +172,7 @@ p {
 }
 
 .bottom-name{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-family: Kalam;
     text-transform: uppercase;
     text-align: center;
@@ -217,7 +218,7 @@ section:not(.first-container), .main-footer{
 
 /* ---- Media Queries ---- */
 
-@media (min-width: 610px) {
+@media (min-width: 768px) {
     .navside{
         display: flex;
         flex-direction: row;
@@ -281,7 +282,7 @@ section:not(.first-container), .main-footer{
     }
 }  
 
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
    
     .main-header{
         padding: 0px;
