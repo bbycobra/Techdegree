@@ -1,11 +1,10 @@
+
+@import url(//fonts.googleapis.com/css?family=Roboto);
+@import url(//fonts.googleapis.com/css?family=Kalam);
+
 /* ================================= 
   Base Styles
 ==================================== */
-
-
-@import url(//fonts.googleapis.com/css?family=Roboto);
-
-@import url(//fonts.googleapis.com/css?family=Kalam);
 
 * {
 	box-sizing: border-box;
